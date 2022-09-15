@@ -24,7 +24,7 @@
       </form>
     </header>
     <main>
-      <div class="site navigation">
+      <div class="site navigation"> <!------------------------------------------------------------------------------------------------------------------>
         <div class="top menu">
           <ul>
             <li>
@@ -45,7 +45,7 @@
           </ul>
         </div>
         <div class="hero banner">
-            <!--banner funkcionalumas eina is javascript/php?-->
+            <!--banner funkcionalumas eina is javascript/php ar to pacio HTML tik reikia naudoti specifini elementa?-->
             <button type="button" class="return on banner">
             </button>
             <h3>
@@ -59,23 +59,203 @@
             <button type="button" class="forwards on banner">
             </button>
         </div>
-        <div class="live newsfeed">
-          <h4><a href="#">Artimiausi renginiai</a></h4>
-          <h5><a href="#">Visi renginiai</a></h5>
-          <div class="renginiu sarasas">
-            <ul>
+        <div class="event feed">
+          <ul>
+            <li><a href="#" class="coming soon">Artimiausi renginiai</a>
+            </li>
+            <li><a href="#" class="all events">Visi renginiai</a>
+            </li>
+          </ul>
+          <div class="renginiu saraso zona">
+            <ul class="renginiu sarasas">
+              <li >
+                <a href="#">
+                  <img src="img/arrowimage">
+                </a>
+              </li>
               <li>
                 <a href="#">
-                    <img src="img\arrowimage">
+                  <img src="img/arrowimage">
                 </a>
-                <
+              </li>
+              <li>
+                <a href="#">
+                  <img src="img/arrowimage">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="img/arrowimage">
+                </a>
               </li>
             </ul>
+            <a href="#">Registruotis į renginį</a>
           </div>
-          <!--BAIGTA CIA-->
         </div> 
       </div>
+      <div class="center"> <!------------------------------------------------------------------------------------------------------------------>
+        <div class="central header">
+            <ul>
+              <li><a href="#" class="current">Naujienos</a>
+              </li>
+              <li><a href="#" class="archive">Naujienų archyvas</a>
+              </li>
+            </ul>
+        </div>        
+        <article class="first">
+          <div class="article name">Įvykis</div>
+          <div class="date">
+            <img src="img/calendar"> 2002-02-22
+          </div>
+          <div class="article image1">
+            <img src="img/image" alt="articles photo">
+          </div>
+          <div class="article one">
+            Text of article
+          </div>
+          <div class="link to full">
+            <a href="#">Daugiau</a>
+          </div>
+        </article>
+        <article class="second">
+            <div class="article name">Įvykis2</div>
+            <div class="date">
+              <img src="img/calendar"> 2002-02-23
+            </div>
+            <!--reactive video size comes from css?-->
+            <video controls width="100">
+                <source src="#">
+                Error text
+            </video>
+            <div class="link to full">
+                <a href="#">Daugiau</a>
+            </div>
+        </article>
+        <article class="third">
+            <div class="article name">Įvykis</div>
+            <div class="date">
+              <img src="img/calendar"> 2002-02-22
+            </div>
+            <div class="article three">
+              Text of article 3
+            </div>
+            <div class="link to full">
+              <a href="#">Daugiau</a>
+            </div>
+        </article>
+        <article class="fourth">
+            <div class="article name">Įvykis</div>
+            <div class="date">
+              <img src="img/calendar"> 2002-02-22
+            </div>
+            <div class="article image1">
+              <img src="img/image" alt="articles photo2">
+            </div>
+            <div class="article four">
+              Text of article 4
+            </div>
+            <div class="link to full">
+              <a href="#">Daugiau</a>
+            </div>
+        </article>
+        <div class="select page">
+          <ol class="number of news page">
+            <!--should EVERY </a> </li> etc. go into separate lines, or can they be 'mushed' when the line is very short?-->
+            <li><a href="#1">
+            </a></li>
+            <li><a href="#2">
+            </a></li>
+            <li><a href="#3">
+            </a></li>
+            <li><a href="#4">
+            </a></li>
+            <li><a href="#5">
+            </a></li>
+          </ol>
+        </div>
+      </div>
+      <div class="photo line group"> <!------------------------------------------------------------------------------------------------------------------>
+        <ul class="photo line header">
+            <li>
+                <a href="#">Nuotraukų galerija
+                </a>
+            </li>
+            <li>
+                <a href="#">Archyvas
+                </a>
+            </li>
+        </ul>
+        <div class="photo line">  
+          <button type="button" class="return on photo line">
+          </button>
+          <ul class="photos">
+            <li><img src="#" alt="gallery1">
+            </li>
+            <li><img src="#" alt="gallery2">
+            </li>
+            <li><img src="#" alt="gallery3">
+            </li>
+            <li><img src="#" alt="gallery4">
+            </li>
+            <li><img src="#" alt="gallery5">
+            </li>
+          </ul>
+          <button type="button" class="next on photo line">
+          </button>
+        </div>
+      </div>
+      <div class="partners"> <!------------------------------------------------------------------------------------------------------------------>
+        <div class=" partners header">
+            Bendradarbiaujame
+        </div>
+        <ul class="partner list">
+            <!--ar reikia kartoti 8x jei norimas rezultatas 8 bendradarbiu paveikslai, ar kuriamas kazkoks specifinis loop ?-->
+          <li>
+            <a href="#">
+              <img src="#">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="#">
+            </a>
+          </li>
+          <li>
+            <a href="#2">
+              <img src="#2">
+            </a>
+          </li>
+          <li>
+            <a href="#2">
+              <img src="#2">
+            </a>
+          </li>
+          <!-- repeat<li> 6 more times-->
+        </ul>
+      </div>
+      <div class="links"> <!------------------------------------------------------------------------------------------------------------------>
+        <div class=" links header">Naudingos nuorodos
+        </div>
+        <ul>
+          <li><a href="#">Suzuki            
+          </a></li>
+          <li><a href="#">Sugihara            
+          </a></li>
+          <li><a href="#">Tokyo            
+          </a></li>
+          <li><a href="#">Madrid            
+          </a></li>
+        </ul>        
+      </div>
     </main>
+    <footer>
+      <div class="copyright">
+        2015m. Lietuvos suzuki asociacija        
+      </div>
+      <div class="address">
+        Vastinės skg. 6, Kaunas LT-44210
+      </div>
+    </footer>
   </body>
 </html>
 
